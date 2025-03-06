@@ -12,15 +12,9 @@ body{
     background-color: #eeeeee
 }
 
-.carousel { 
-    display: flex; 
-    overflow: hidden; 
-    width: 300px; 
-    } 
-    .carousel img { 
-    width: 100%; 
-    transition: transform 0.5s ease-in-out; 
-    }
+.flexivel{
+    display: flex;
+}
 
 .navbar{
     background-color: #d76483;
@@ -48,10 +42,12 @@ body{
     text-align:center
 }
 
+
+
 .imagem{
-    width: 33.125rem;
+
     max-height: 100%;
-    height: 28.125rem;
+
     max-width: 100%;
     margin: 0.625rem;
     border-radius: 8px;
