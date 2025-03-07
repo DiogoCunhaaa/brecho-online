@@ -59,7 +59,6 @@ body{
 .rodape {
     background-color: #d76483;
     text-align: center;
-    position: sticky;
 }
 
 .divisao_dentro_do_rodape_para_texto {
@@ -70,3 +69,16 @@ body{
 }
 
 
+
+.modoescuro {
+    background-color: #867371;
+    color: #ffffff;
+}
+
+.modoescuro .navbar {
+    background-color: #e0ccca;
+}
+
+.modoescuro .rodape {
+    background-color: #e0ccca;
+}
