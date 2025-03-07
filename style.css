@@ -71,7 +71,6 @@ section{
     font-size: 32px;
 }
 
-
 .border{
     border: 4px solid black;
     border-radius: 8px;
@@ -155,11 +154,6 @@ section{
 .modoescuro .rodape {
     background-color: #5b0432;
 }
-
-
-
-
-
 
 .glow-on-hover {
     width: 50px;
