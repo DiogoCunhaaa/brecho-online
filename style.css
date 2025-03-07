@@ -2,14 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body{
-    background-color: #eeeeee
+    background-color: #eeeeee;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+section{
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .flexivel{
@@ -18,14 +27,15 @@ body{
 
 .navbar{
     background-color: #d76483;
-    padding: 1rem;
+    padding: 1rem; 
 }
 
 .navbar ul {
+    padding-left: 790px;
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 2rem;
+    align-items: center;
 }
 
 .navbar a{
@@ -42,43 +52,172 @@ body{
     text-align:center
 }
 
+#produtos_camisa{
+    padding-left: 140px;
+}
+
+#produtos_calcas{
+    padding-left: 140px;
+}
+
+#sobre{
+    padding-left: 140px;
+}
+
+.section_title{
+    margin: auto px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 32px;
+}
 
 
-.imagem{
-
-    max-height: 100%;
-
-    max-width: 100%;
-    margin: 0.625rem;
+.border{
+    border: 4px solid black;
     border-radius: 8px;
+    margin:auto 20px;
+}
+
+.imagem{    
+    max-height: 100%;
+    max-width: 100%;
+    margin: 1.2rem;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    
+    align-items: center;
+    margin: 0 auto;
+}
+
+.descricao{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.texto1{
+    margin:auto 60px;
 }
 
 .rodape {
     background-color: #d76483;
     text-align: center;
-}
-
-.divisao_dentro_do_rodape_para_texto {
     color: white;
     font-weight: bold;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
+#contato{
+    position: fixed;
+    bottom: 1px;
+    right: 20px;
+    display: flex;
+    padding: 10px;
+    opacity: 0.8;
+    background-color: #4f4f4f;
+    border-radius: 10px;
+    text-align: center;
 
+}
+
+#formulario_contato{
+    padding:3px;
+    background-color: rgb(86, 86, 86);
+}
+
+#contato_tt{
+    padding-bottom: 10px;
+}
+
+.button{
+    background-color: #f6e5cb;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+}
+
+.modoescuro section{
+    background-color: #e0ccca;
+}
 
 .modoescuro {
-    background-color: #867371;
-    color: #ffffff;
+    background-color: #cab6b3;
+    color: black;  
 }
 
 .modoescuro .navbar {
-    background-color: #e0ccca;
+    background-color: #5b0432;
 }
 
 .modoescuro .rodape {
-    background-color: #e0ccca;
+    background-color: #5b0432;
 }
+
+
+
+
+
+
+.glow-on-hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 100%;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #000, #ffffff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 90s linear infinite; 
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 100%;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
