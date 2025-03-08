@@ -20,6 +20,20 @@
                     <li></li> 
                 </ul>
                 <button id="modoescuro" class="glow-on-hover">🌙</button>
+                <div class="espaco"></div>
+                <a href="cart.html">
+                    <button class="go-to-cart-btn">
+                        Meu Carrinho
+                        <span class="contador">0</span>
+                    </button>
+                </a>
+                <div class="overlay" id="overlay"></div>
+                <div class="sidebar" id="sidebar">
+                    <button class="sidebar-button">Botão 1</button>
+                    <button class="sidebar-button">Botão 2</button>
+                    <button class="sidebar-button">Botão 3</button>
+                </div>
+                <button class="open-sidebar" id="openSidebar">Abrir Sidebar</button>
             </div>
         </nav> 
     </header>
@@ -49,6 +63,12 @@
                         <div class="descricao">
                             <h2>Preço : 100R$</h2> 
                         </div>
+                        <div class="descricao2">
+                            Camisa High Preta
+                        </div>    
+                        <div class="botaoadd">
+                            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                        </div>
                     </div>
                     <div class="border">
                         <div class="imagem"> 
@@ -56,6 +76,12 @@
                         </div>
                         <div class="descricao">
                            <h2> Preço : 120 R$ </h2>
+                        </div>
+                        <div class="descricao2">
+                            Camisa High Ciclista
+                        </div>    
+                        <div class="botaoadd">
+                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                     <div class="border">
@@ -65,6 +91,13 @@
                         <div class="descricao">
                            <h2> Preço : 120 R$ </h2>
                         </div>
+                        <div class="descricao2">
+                            Camisa High Popeye
+                        </div>    
+                        <div class="botaoadd">
+                            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                        </div>
+                        
                 </div>
             </section>
             <section id="produtos_calcas">   
@@ -79,6 +112,12 @@
                         <div class="descricao">
                           <h2>  Preço : 150R$ </h2>
                         </div>
+                        <div class="descricao2">
+                            Calça Jeans Marrom
+                        </div>    
+                        <div class="botaoadd">
+                            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                        </div>
                     </div>
                     <div class="border">
                         <div class="imagem"> 
@@ -86,6 +125,12 @@
                         </div>
                         <div class="descricao">
                            <h2> Preço : 170 R$ </h2>
+                        </div>
+                        <div class="descricao2">
+                            Calça Jeans Azul
+                        </div>    
+                        <div class="botaoadd">
+                            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                     <div class="border">
@@ -95,8 +140,63 @@
                         <div class="descricao">
                            <h2> Preço : 170 R$
                         </div>
+                        <div class="descricao2">
+                            Calça Preta
+                        </div>    
+                        <div class="botaoadd">
+                            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
                 </div>
-            </section>  
+              </section>  
+                <section id="produtos_acessorios">
+                    <div class="section_title">
+                        Acessórios
+                   </div>
+                    <div class="flexivel">
+                        <div class="border">
+                            <div class="imagem"> 
+                            <img src="/img/oculos-removebg-preview.png">
+                            </div>
+                            <div class="descricao">
+                                <h2>Preço : 200R$</h2> 
+                            </div>
+                            <div class="descricao2">
+                                Óculos
+                            </div>    
+                            <div class="botaoadd">
+                                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="imagem"> 
+                            <img src="/img/relogio_casio-removebg-preview.png">
+                            </div>
+                            <div class="descricao">
+                               <h2> Preço : 190 R$ </h2>
+                            </div>
+                            <div class="descricao2">
+                                Relógio Casio
+                            </div>    
+                            <div class="botaoadd">
+                            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="imagem"> 
+                            <img src="/img/corrente-removebg-preview.png">
+                            </div>
+                            <div class="descricao">
+                               <h2> Preço : 130 R$ </h2>
+                            </div>
+                            <div class="descricao2">
+                                Corrente de Prata
+                            </div>    
+                            <div class="botaoadd">
+                                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                            </div>
+                    </div>     
+                </section>  
 
             <section id="sobre">
                 <div class="section_title">
@@ -105,27 +205,10 @@
                     <div class="texto1">
                         Somos uma empresa ascendendo no ramo de vestuário, atendemos na cidade de Joinville e futuramente pretendemos expandir para o Brasil inteiro.   
                     </div>    
-
             </section>
-
-            
     </main>
 
     <footer>
-        <section id="contato">
-            <div id="formulario_contato">
-                <div id="contato_tt">
-                    <h2>Contato</h2>
-                </div>
-                <form action="#" method="post">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
         <div class="rodape">
             <p>© 2025 Brechó Online. Todos os direitos reservados.</p>
         </div>

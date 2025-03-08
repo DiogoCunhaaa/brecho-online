@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brechó Online</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="flexivel">
+                <ul>
+                    <a href="index.html"><button class="botaoprodutos"><li>
+                        <div class="nav_text">Produtos</div>
+                    </li></button></a>
+                    <a href="index.html"><button class="botaoprodutos"><li>
+                        <div class="nav_text">Sobre</div>
+                    </li></button></a>
+                    <a href="index.html"><button class="botaoprodutos"><li>
+                        <div class="nav_text">Contato</div>
+                    </li></button></a>
+
+                </ul>
+                <button id="modoescuro" class="glow-on-hover">🌙</button>
+                <div class="espaco"></div>
+                
+                <a href="cart.html">
+                    <button class="go-to-cart-btn">
+                        Meu Carrinho
+                        <span class="contador">0</span>
+                    </button>
+                </a>
+                <div class="overlay" id="overlay"></div>
+                <div class="sidebar" id="sidebar">
+                    <button id="modoescuro" class="glow-on-hover">🌙</button>
+                    <a href="cart.html">
+                        <button class="go-to-cart-btn">
+                            Meu Carrinho
+                            <span class="contador">0</span>
+                        </button>
+                    </a>
+                </div>
+                <button class="open-sidebar" id="openSidebar">Abrir Sidebar</button>
+            </div>
+        </nav> 
+    </header>
+
+    <main>
+        <div class="title_cart">  
+            <h1> Seu Carrinho</h1>
+        </div>
+            <section id="produtos_cart">
+                <div class="section_title">
+                    Produtos
+                </div>
+                <div >
+                    <div class="conteudo">
+                        <div class="aviso_cart">
+                            Seu carrinho esta vazio.
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <p>© 2025 Brechó Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+</html>

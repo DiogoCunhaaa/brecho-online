@@ -19,3 +19,34 @@ const elementos = document.querySelectorAll('');
             });
         });
     });
+
+
+
+let cartCount = 1;
+
+const addToCartButton = document.querySelector('.add-to-cart-btn');
+const cartCounter = document.querySelector('.contador');
+
+function updateCartCounter() {
+    cartCounter.textContent = cartCount;
+}
+
+addToCartButton.addEventListener('click', () => {
+    cartCount++; 
+    updateCartCounter(); 
+    alert('produto adicionado'); 
+});
+
+updateCartCounter();
+
+
+
+document.getElementById('openSidebar').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.add('open');
+    document.getElementById('overlay').style.display = 'block';
+});
+
+document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('overlay').style.display = 'none';
+});
