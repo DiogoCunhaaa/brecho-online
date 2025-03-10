@@ -1,7 +1,7 @@
 const botaomodoescuro = document.getElementById('modoescuro');
 const body = document.body;
 
-modoescuro.addEventListener('click', () => {
+botaomodoescuro.addEventListener('click', () => {
     body.classList.toggle('modoescuro');
 });
 
